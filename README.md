@@ -74,7 +74,7 @@ Built with:
 
   Accessible globally, meaning that no matter what file you are using it in your NodeJS project, as long as the cache name is the same, it will be referring to the same cache:
 
-  Inside File_A.js: 
+  Inside `File_A.js`: 
   ```javascript
   // File_A.js
 
@@ -83,7 +83,7 @@ Built with:
 
   ```
 
-  Inside File_B.js: 
+  Inside `File_B.js`: 
   ```javascript
   // File_B.js
 
@@ -95,7 +95,7 @@ Built with:
 
 ## API Reference
 
-* set(key, value, expiryInMs)
+* `set(key, value, expiryInMs)`
 
   Usage:
   ```javascript
@@ -109,7 +109,7 @@ Built with:
 
   ```
 
-* get(key)
+* `get(key)`
 
   Usage:
   ```javascript
@@ -123,7 +123,7 @@ Built with:
 
   ```
 
-* delete(key)
+* `delete(key)`
 
   Usage:
   ```javascript
@@ -137,7 +137,7 @@ Built with:
 
   ```
 
-* dump()
+* `dump()`
 
   Usage:
   ```javascript
@@ -151,7 +151,7 @@ Built with:
 
   ```
 
-* clearAll()
+* `clearAll()`
 
   Usage:
   ```javascript
