@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/joshuaquek/QuickCache/issues"
   },
-  "homepage": "https://github.com/joshuaquek/QuickCache#readme"
+  "homepage": "https://github.com/joshuaquek/QuickCache#readme",
+  "dependencies": {
+    "lokijs": "^1.5.5"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
 }
