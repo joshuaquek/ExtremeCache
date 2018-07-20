@@ -19,13 +19,15 @@ Built with:
   Add this to the js file that you are using it in:
 
   ```javascript
-  let ExtremeCache = require('extreme-cache')
+  const ExtremeCache = require('extreme-cache')
 
   ```
 
   Simple usage:
 
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')  // No expiry
@@ -42,8 +44,8 @@ Built with:
   Another example usage:
 
   ```javascript
-  const ExtremeCache = require('../index.js')
-
+  const ExtremeCache = require('extreme-cache')
+  
   const cache = ExtremeCache('my-custom-cache') 
 
   // ---- Insert a value with an expiry of 5.0 seconds ----
@@ -78,7 +80,10 @@ Built with:
   ```javascript
   // File_A.js
 
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-unique-cache-name') 
+
   cache.set('cat-name', 'garfield')
 
   ```
@@ -87,8 +92,12 @@ Built with:
   ```javascript
   // File_B.js
 
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-unique-cache-name') 
+
   let value = cache.get('cat-name')
+  
   console.log(value) // outputs 'garfield'
 
   ```
@@ -99,6 +108,8 @@ Built with:
 
   Usage:
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-custom-cache') 
 
   // Set with an expiry
@@ -113,6 +124,8 @@ Built with:
 
   Usage:
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+  
   const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
@@ -127,6 +140,8 @@ Built with:
 
   Usage:
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
@@ -141,12 +156,16 @@ Built with:
 
   Usage:
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
+
   cache.set('dog-name', 'odi', 5000)
 
   let value = cache.dump()
+  
   console.log(value) // outputs the entire cache in an array - [{ key: 'cat-name', value: 'garfield', timeoutInMs: undefined }, { key: 'dog-name', value: 'odi', timeoutInMs: 5000 }]
 
   ```
@@ -155,9 +174,12 @@ Built with:
 
   Usage:
   ```javascript
+  const ExtremeCache = require('extreme-cache')
+
   const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
+  
   cache.set('dog-name', 'odi', 5000)
 
   let value = cache.dump()

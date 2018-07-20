@@ -1,6 +1,6 @@
 {
   "name": "extreme-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extremely performant cache for production usage (1.2 million ops/s). Completely synchronous, no Promises required.",
   "main": "index.js",
   "scripts": {
