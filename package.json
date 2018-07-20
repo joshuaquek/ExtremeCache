@@ -1,14 +1,14 @@
 {
-  "name": "quick-cache",
+  "name": "extreme-cache",
   "version": "1.0.0",
-  "description": "High performance cache for production usage (1.2 million ops/s)",
+  "description": "Extremely performant cache for production usage (1.2 million ops/s). Completely synchronous, no Promises required.",
   "main": "index.js",
   "scripts": {
     "test": "node tests/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshuaquek/QuickCache.git"
+    "url": "git+https://github.com/joshuaquek/ExtremeCache.git"
   },
   "keywords": [
     "cache",
@@ -18,9 +18,9 @@
   "author": "joshuaquek <“joshua.quek.fullstack@gmail.com”> (http://www.github.com/joshuaquek)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshuaquek/QuickCache/issues"
+    "url": "https://github.com/joshuaquek/ExtremeCache/issues"
   },
-  "homepage": "https://github.com/joshuaquek/QuickCache#readme",
+  "homepage": "https://github.com/joshuaquek/ExtremeCache#readme",
   "dependencies": {
     "lokijs": "^1.5.5"
   },

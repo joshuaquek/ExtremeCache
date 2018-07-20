@@ -1,10 +1,10 @@
-# ⚡️🛢 QuickCache
+# 🔥🛢 ExtremeCache
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/joshuaquek/QuickCache/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/joshuaquek/ExtremeCache/graphs/commit-activity)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-High performance cache for production usage (1.2 million ops/s). Completely synchronous, no Promises required.
+Extremely performant cache for production usage (1.2 million ops/s). Completely synchronous, no Promises required.
 
 Built with:
 * LokiJS High-performance Datastore package
@@ -12,21 +12,21 @@ Built with:
 
 ## Installation
 
-  `npm install quick-cache`
+  `npm install extreme-cache`
 
 ## Usage
 
   Add this to the js file that you are using it in:
 
   ```javascript
-  let QuickCache = require('quick-cache')
+  let ExtremeCache = require('extreme-cache')
 
   ```
 
   Simple usage:
 
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')  // No expiry
   cache.set('dog-name', 'odi', 60000) // Expires after 60000 milliseconds, which is 60 seconds
@@ -42,9 +42,9 @@ Built with:
   Another example usage:
 
   ```javascript
-  const QuickCache = require('../index.js')
+  const ExtremeCache = require('../index.js')
 
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   // ---- Insert a value with an expiry of 5.0 seconds ----
   cache.set('personA', {name: 'john', age: 21}, 5000) 
@@ -78,7 +78,7 @@ Built with:
   ```javascript
   // File_A.js
 
-  const cache = QuickCache('my-unique-cache-name') 
+  const cache = ExtremeCache('my-unique-cache-name') 
   cache.set('cat-name', 'garfield')
 
   ```
@@ -87,7 +87,7 @@ Built with:
   ```javascript
   // File_B.js
 
-  const cache = QuickCache('my-unique-cache-name') 
+  const cache = ExtremeCache('my-unique-cache-name') 
   let value = cache.get('cat-name')
   console.log(value) // outputs 'garfield'
 
@@ -99,7 +99,7 @@ Built with:
 
   Usage:
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   // Set with an expiry
   cache.set('cat-name', 'garfield', 5000)
@@ -113,7 +113,7 @@ Built with:
 
   Usage:
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
 
@@ -127,7 +127,7 @@ Built with:
 
   Usage:
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
 
@@ -141,7 +141,7 @@ Built with:
 
   Usage:
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
   cache.set('dog-name', 'odi', 5000)
@@ -155,7 +155,7 @@ Built with:
 
   Usage:
   ```javascript
-  const cache = QuickCache('my-custom-cache') 
+  const cache = ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
   cache.set('dog-name', 'odi', 5000)

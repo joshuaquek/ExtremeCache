@@ -1,9 +1,9 @@
 const Loki = require('lokijs') // Used as the high-performance store, and clears when the nodejs process restarts
 const crypto = require('crypto') // Used for creating a hashed name for cache in case the nodejs project already uses lokijs as a store/database
 
-// Returns a quickcache object
+// Returns a ExtremeCache object
 module.exports = (cacheName) => {
-  if (!cacheName) throw new Error('Please provide a cache name. Example: ` QuickCache("my-custom-cache") ` ') // If no input is given, throw error
+  if (!cacheName) throw new Error('Please provide a cache name. Example: ` ExtremeCache("my-custom-cache") ` ') // If no input is given, throw error
   const hashedName = crypto.createHash('sha256').update(cacheName).digest('hex') // Create hashed name for cache in case project already uses lokijs as a store/database
   const cache = new Loki(`${hashedName}.db`) // Create temporary cache upon initialisation
   const store = cache.addCollection(hashedName, { clone: true, disableMeta: true }) // Set clone to true to prevent changing store values from resultset, and set disableMeta to true to disable Metadata
