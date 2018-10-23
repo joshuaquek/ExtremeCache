@@ -1,6 +1,6 @@
 const ExtremeCache = require('../index.js')
 
-const cache = ExtremeCache('my-custom-cache')
+const cache = new ExtremeCache('my-custom-cache')
 
 console.log('\n\n')
 console.log(' ---- Insert a value with an expiry of 5.0 seconds ----')
