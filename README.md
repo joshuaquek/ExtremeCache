@@ -28,7 +28,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')  // No expiry
   cache.set('dog-name', 'odi', 60000) // Expires after 60000 milliseconds, which is 60 seconds
@@ -46,7 +46,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
   
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   // ---- Insert a value with an expiry of 5.0 seconds ----
   cache.set('personA', {name: 'john', age: 21}, 5000) 
@@ -82,7 +82,7 @@ Built with:
 
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-unique-cache-name') 
+  const cache = new ExtremeCache('my-unique-cache-name') 
 
   cache.set('cat-name', 'garfield')
 
@@ -94,7 +94,7 @@ Built with:
 
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-unique-cache-name') 
+  const cache = new ExtremeCache('my-unique-cache-name') 
 
   let value = cache.get('cat-name')
   
@@ -110,7 +110,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   // Set with an expiry
   cache.set('cat-name', 'garfield', 5000)
@@ -126,7 +126,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
   
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
 
@@ -142,7 +142,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
 
@@ -158,7 +158,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
 
@@ -176,7 +176,7 @@ Built with:
   ```javascript
   const ExtremeCache = require('extreme-cache')
 
-  const cache = ExtremeCache('my-custom-cache') 
+  const cache = new ExtremeCache('my-custom-cache') 
 
   cache.set('cat-name', 'garfield')
   
