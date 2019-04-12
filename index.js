@@ -8,10 +8,10 @@ function ExtremeCache (cacheName) {
   // ------- Global class wide variables -------
   this.hashedName = (cacheName) => {
     if (!cacheName) throw new Error('Please provide a cache name. Example: ` ExtremeCache("my-custom-cache") ` ') // If no input is given, throw error
-    crypto.createHash('sha256').update(cacheName).digest('hex') // Create hashed name for cache in case project already uses lokijs as a store/database
+    return crypto.createHash('sha256').update(cacheName).digest('hex') // Create hashed name for cache in case project already uses lokijs as a store/database
   }
-  this.cache = new Loki(`${this.hashedName}.db`) // Create temporary cache upon initialisation
-  this.store = this.cache.addCollection(this.hashedName, { clone: true, disableMeta: true }) // Set clone to true to prevent changing store values from resultset, and set disableMeta to true to disable Metadata
+  this.cache = new Loki(`${this.hashedName(cacheName)}.db`) // Create temporary cache upon initialisation
+  this.store = this.cache.addCollection(this.hashedName(cacheName), { clone: true, disableMeta: true }) // Set clone to true to prevent changing store values from resultset, and set disableMeta to true to disable Metadata
 
   // ------- Set value from store using key -------
   this.set = (key, value, expiryInMs) => {

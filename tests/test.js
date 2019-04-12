@@ -15,7 +15,7 @@ console.log(insertedResult2)
 console.log('\n\n')
 
 setTimeout(() => {
-  console.log('---- Check cache for object after 3.0 seconds ----')
+  console.log('---- Check cache for "john" object after 3.0 seconds ----')
   let value = cache.get('john')
   console.log(value)
   console.log('\n\n')
@@ -29,7 +29,7 @@ setTimeout(() => {
 }, 4000)
 
 setTimeout(() => {
-  console.log('---- Check cache after 7.0 seconds, it should return undefined because expiry has been set to 5.0 seconds ----')
+  console.log('---- Check cache for "john" object after 7.0 seconds, it should return undefined because expiry has been set to 5.0 seconds ----')
   let value = cache.get('john')
   console.log(value)
   console.log('\n\n')
@@ -50,7 +50,7 @@ setTimeout(() => {
 }, 11000)
 
 setTimeout(() => {
-  console.log('---- Check cache after 7.0 seconds, it should return undefined because expiry has been set to 5.0 seconds ----')
+  console.log('---- Check cache after 7.0 seconds, check for "jane" object, it should return undefined because expiry has been set to 5.0 seconds ----')
   let value = cache.get('jane')
   console.log(value)
   console.log('\n\n')
